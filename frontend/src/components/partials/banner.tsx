@@ -33,7 +33,7 @@ const Banner = () => {
             preload="metadata"
             className="w-full h-full object-cover"
           >
-            <source src={"/robocus24 (1).mp4#t=.1"} type="video/mp4" />
+            <source src={"https://pub-56dff0b35bda462099f1145617bde151.r2.dev/robocus24%20(1).mp4#t=.1"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

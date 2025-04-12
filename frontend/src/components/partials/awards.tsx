@@ -6,7 +6,7 @@ const Awards = () => {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full mt-14 mx-auto">
-        <AwardCard
+        {/* <AwardCard
           name="Trần Nguyễn Phúc Khang"
           award="Giải nhất toàn cuộc thi"
           quote="Em cảm thấy cuộc thi này khá là dễ"
@@ -15,8 +15,7 @@ const Awards = () => {
           name="Trần Nguyễn Phúc Khang"
           award="Giải nhất toàn cuộc thi"
           quote="Em cảm thấy cuộc thi này khá là dễ"
-        />
-        {/* Add more AwardCard components here */}
+        /> */}
       </div>
     </div>
   );

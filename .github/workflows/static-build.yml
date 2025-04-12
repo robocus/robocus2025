@@ -33,6 +33,15 @@ jobs:
           repository: robocus/robocus.github.io
           path: robocus.github.io
           token: ${{ secrets.PAT_TOKEN }}
+          ssh-strict: true
+          persist-credentials: true
+          clean: true
+          sparse-checkout-cone-mode: true
+          fetch-depth: 1
+          fetch-tags: false
+          lfs: false
+          submodules: false
+          set-safe-directory: true
 
       - name: Copy built files and create PR
         run: |

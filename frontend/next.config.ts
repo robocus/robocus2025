@@ -1,15 +1,10 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+const nextConfig = {
   output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  assetPrefix: '/robocus2025/',
   basePath: '/robocus2025',
+  assetPrefix: '/robocus2025/',
+  eslint: { ignoreDuringBuilds: true },
 };
 
 export default nextConfig;

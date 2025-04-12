@@ -2,15 +2,15 @@ export const Organizer = () => {
   const organizers = [
     {
       name: "Trường ĐH KHTN, ĐHQG - HCM",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quam quo dolorem repudiandae vero ipsa necessitatibus",
+      desc: "Là đơn vị chủ quản, Trường Đại học Khoa học Tự nhiên đóng vai trò then chốt trong việc tổ chức, cung cấp cơ sở vật chất, chuyên môn và tạo điều kiện cho sinh viên phát triển trong lĩnh vực Khoa học và Công nghệ.",
     },
     {
       name: "CLB Robotics - IoT",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quam quo dolorem repudiandae vero ipsa necessitatibus",
+      desc: "Là lực lượng nòng cốt đứng sau cuộc thi Robocus, CLB Robotics - IoT tập hợp những sinh viên đam mê công nghệ, sáng tạo và nghiên cứu trong các lĩnh vực robot, lập trình, và Internet vạn vật.",
     },
     {
       name: "TT Đào tạo Quốc tế ITEC",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quam quo dolorem repudiandae vero ipsa necessitatibus",
+      desc: "Đơn vị đồng hành hỗ trợ kỹ thuật và chuyên môn, ITEC tạo cầu nối giữa sinh viên và môi trường công nghệ toàn cầu thông qua các chương trình đào tạo, hợp tác quốc tế và chuyển giao tri thức.",
     },
   ];
   const sponsors = [

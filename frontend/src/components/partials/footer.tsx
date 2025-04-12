@@ -24,9 +24,18 @@ const Footer = () => {
         { name: "Robocus 2024", href: "" },
       ],
     },
+    {
+      name: "Liên hệ",
+      items: [
+        { name: "Địa chỉ: 227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM", href: "https://maps.app.goo.gl/VAWCdYoRM6pz15JX9" },
+        { name: "Hotline / Zalo: 0366.399.748", href: "" },
+        { name: "Email: robotics@hcmus.edu.vn", href: "" },
+        { name: "Fanpage: facebook.com/RoboticsHCMUS", href: "https://www.facebook.com/RoboticsHCMUS" },
+      ],
+    }
   ];
   return (
-    <div className="p-10">
+    <div className="p-10" id="contact">
       <div className="flex items-center gap-1">
         <img
           src="https://github.com/robocus/robocus.github.io/blob/main/docs/images/logo/logo.png?raw=true"

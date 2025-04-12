@@ -5,12 +5,12 @@ const Intro = () => {
     {
       topic: "Robotics",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur at quidem a mollitia veniam vel vitae quis. Qui debitis nulla, dolorum quam voluptatem adipisci mollitia cum quod esse eum.",
+        "Cuộc thi thử thách khả năng thiết kế và lắp ráp robot thông minh. Thí sinh sẽ vận dụng kiến thức về cơ khí, điện tử và IoT để tạo ra các mô hình robot hoàn chỉnh, có khả năng tự hành và thực hiện nhiệm vụ trong môi trường mô phỏng thực tế.",
     },
     {
       topic: "Programming",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur at quidem a mollitia veniam vel vitae quis. Qui debitis nulla, dolorum quam voluptatem adipisci mollitia cum quod esse eum.",
+        "Lập trình là chìa khóa điều khiển robot và xử lý dữ liệu cảm biến. Các đội thi sẽ viết phần mềm điều hướng, xử lý ảnh, và giao tiếp với phần cứng, sử dụng các ngôn ngữ lập trình như Arduino hoặc các nền tảng lập trình nhúng phổ biến.",
     },
   ];
 
@@ -26,7 +26,9 @@ const Intro = () => {
       </p>
 
       <div className="mt-8 flex flex-wrap lg:flex-nowrap gap-3">
-        <div className="h-[24rem] w-[120rem] bg-gray-900"></div>
+        <div className="h-[24rem] w-[120rem] bg-gray-900">
+          <img src="https://pub-56dff0b35bda462099f1145617bde151.r2.dev/480740289_1046959440572965_8248390217217583053_n.jpg" alt="" className="w-full h-full object-cover"/>
+        </div>
 
         <div className="flex flex-col flex-wrap gap-8">
           {data.map((item, index) => (

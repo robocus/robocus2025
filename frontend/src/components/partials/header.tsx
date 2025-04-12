@@ -8,11 +8,11 @@ const Header = () => {
 
   const navs = [
     { name: "Trang chủ", href: "/" },
-    { name: "Giới thiệu", href: "#intro" },
-    { name: "Thể lệ", href: "#overview" },
-    { name: "Đơn vị", href: "#organizer" },
-    { name: "Hành trình", href: "#lookback" },
-    { name: "Liên hệ", href: "/" },
+    { name: "Giới thiệu", href: "/#intro" },
+    { name: "Thể lệ", href: "/#overview" },
+    { name: "Đơn vị", href: "/#organizer" },
+    { name: "Hành trình", href: "/#lookback" },
+    { name: "Liên hệ", href: "/#contact" },
   ];
 
   return (

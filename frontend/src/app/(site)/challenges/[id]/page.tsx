@@ -3,9 +3,16 @@ import { Tabs } from "radix-ui";
 const Challenge = () => {
   return (
     <div className="container mx-auto px-4 xl:px-24">
-      <h1 className="gradient-text text-5xl md:text-6xl font-medium">BẢNG A - WEDO 2.0</h1>
+      <h1 className="gradient-text text-5xl md:text-6xl font-medium">
+        BẢNG A - WEDO 2.0
+      </h1>
 
-      <Tabs.Root
+      <h1 className="text-center text-5xl mt-8">ĐANG CẬP NHẬT</h1>
+      <h2 className="text-center mt-4 text-xl">
+        Nội dung bảng đấu sẽ sớm được công bố. Vui lòng đợi.
+      </h2>
+
+      {/* <Tabs.Root
         defaultValue="tab1"
         orientation="vertical"
         className="flex flex-col"
@@ -25,7 +32,7 @@ const Challenge = () => {
         <Tabs.Content value="tab2">
           <BangAThuyetTrinh />
         </Tabs.Content>
-      </Tabs.Root>
+      </Tabs.Root> */}
     </div>
   );
 };
@@ -35,7 +42,9 @@ export default Challenge;
 const BangASaBan = () => {
   return (
     <div className="border border-blue-900">
-      <h3 className="text-3xl mt-6 border-b border-blue-900 pb-5 px-4">Nội dung</h3>
+      <h3 className="text-3xl mt-6 border-b border-blue-900 pb-5 px-4">
+        Nội dung
+      </h3>
 
       <Tabs.Root
         orientation="vertical"
@@ -53,7 +62,7 @@ const BangASaBan = () => {
             Giải thưởng
           </Tabs.Trigger>
         </Tabs.List>
-        
+
         <Tabs.Content value="tab3" className="col-span-4 p-4">
           <p className="font-light">
             <span className="font-medium">Độ tuổi:</span> 5 - 10 tuổi
@@ -132,7 +141,9 @@ const BangASaBan = () => {
 const BangAThuyetTrinh = () => {
   return (
     <div className="border border-blue-900">
-      <h3 className="text-3xl mt-6 border-b border-blue-900 pb-5 px-4">Nội dung</h3>
+      <h3 className="text-3xl mt-6 border-b border-blue-900 pb-5 px-4">
+        Nội dung
+      </h3>
 
       <Tabs.Root
         orientation="vertical"

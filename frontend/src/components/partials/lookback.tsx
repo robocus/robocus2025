@@ -33,11 +33,11 @@ const Lookback = ({
   const overTheYears = [
     {
       year: "Robocus 2023",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur at quidem a mollitia veniam vel vitae quis. Qui debitis nulla, dolorum quam voluptatem adipisci mollitia cum quod esse eum.",
+      desc: "Robocus 2023 đánh dấu mùa đầu tiên đầy cảm xúc với sự tham gia của hơn 100 học sinh đến từ các trường THCS và THPT trên địa bàn TP.HCM. Cuộc thi không chỉ khơi gợi niềm yêu thích công nghệ mà còn là sân chơi gắn kết các bạn trẻ cùng sáng tạo và thi đấu với những robot do chính tay mình lập trình.",
     },
     {
       year: "Robocus 2024",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur at quidem a mollitia veniam vel vitae quis. Qui debitis nulla, dolorum quam voluptatem adipisci mollitia cum quod esse eum.",
+      desc: "Tiếp nối thành công, Robocus 2024 đã mở rộng quy mô với các bảng đấu chuyên sâu hơn về kỹ thuật và tư duy giải quyết vấn đề. Không khí sôi động, cạnh tranh nhưng tràn đầy tinh thần học hỏi và hỗ trợ lẫn nhau đã khiến mùa giải trở thành một dấu ấn đáng nhớ trong lòng thí sinh và ban tổ chức.",
     },
   ];
 

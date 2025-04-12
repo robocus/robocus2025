@@ -1,14 +1,19 @@
+import { img } from "motion/react-client";
+
 export const Organizer = () => {
   const organizers = [
     {
+      imgUrl: "https://pub-56dff0b35bda462099f1145617bde151.r2.dev/image.png",
       name: "Trường ĐH KHTN, ĐHQG - HCM",
       desc: "Là đơn vị chủ quản, Trường Đại học Khoa học Tự nhiên đóng vai trò then chốt trong việc tổ chức, cung cấp cơ sở vật chất, chuyên môn và tạo điều kiện cho sinh viên phát triển trong lĩnh vực Khoa học và Công nghệ.",
     },
     {
+      imgUrl: "https://pub-56dff0b35bda462099f1145617bde151.r2.dev/image%20copy.png",
       name: "CLB Robotics - IoT",
       desc: "Là lực lượng nòng cốt đứng sau cuộc thi Robocus, CLB Robotics - IoT tập hợp những sinh viên đam mê công nghệ, sáng tạo và nghiên cứu trong các lĩnh vực robot, lập trình, và Internet vạn vật.",
     },
     {
+      imgUrl: "https://talentmind.edu.vn/wp-content/uploads/2015/03/ITEC-logo.jpg",
       name: "TT Đào tạo Quốc tế ITEC",
       desc: "Đơn vị đồng hành hỗ trợ kỹ thuật và chuyên môn, ITEC tạo cầu nối giữa sinh viên và môi trường công nghệ toàn cầu thông qua các chương trình đào tạo, hợp tác quốc tế và chuyển giao tri thức.",
     },
@@ -35,6 +40,7 @@ export const Organizer = () => {
             key={index}
             name={organizer.name}
             desc={organizer.desc}
+            logo={organizer.imgUrl}
           />
         ))}
       </div>
@@ -60,7 +66,13 @@ const OrganizerCard = ({
   return (
     <>
       <div className="w-[30rem]">
-        <div className="logo w-16 h-16 bg-slate-900"></div>
+        <div className="logo w-max h-16 grayscale-25">
+          <img
+            src={logo}
+            alt=""
+            className="w-full h-full object-contain"
+          />
+        </div>
         <h4 className="text-2xl font-medium mt-4">{name}</h4>
         <p className="w-auto font-light mt-4">{desc}</p>
       </div>

@@ -48,7 +48,7 @@ const Timeline = ({
   return (
     <div className="">
       <h1 className="gradient-text text-3xl font-medium">TIMELINE CUỘC THI</h1>
-      
+      <h2 className="text-xl mt-4">Thời gian thi đấu sẽ sớm được công bố. Vui lòng đợi.</h2> 
       <Spacer count={4} />
     </div>
   );

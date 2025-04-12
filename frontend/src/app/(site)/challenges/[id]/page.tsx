@@ -1,6 +1,16 @@
 import { Tabs } from "radix-ui";
 
-const Challenge = () => {
+export async function generateStaticParams() {
+  // Assuming you fetch data from an API or a mock
+  const newsIds = ["A", "B", "C"]; // Replace with your data fetching logic
+
+  // Return the dynamic paths
+  return newsIds.map((id) => ({
+    id: id.toString(), // Use the actual field if the ID is a number or string
+  }));
+}
+
+const Challenge = ({ params }: { params: Promise<{ id: string }> }) => {
   return (
     <div className="container mx-auto px-4 xl:px-24">
       <h1 className="gradient-text text-5xl md:text-6xl font-medium">

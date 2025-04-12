@@ -7,7 +7,10 @@ const NewsPage = async ({ searchParams }: { searchParams: Promise<{ search: stri
     <main>
       <PageWall title="TIN TỨC" image="https://robocus.org/images/slider-image/test-02.jpg" />
       <Spacer count={6} />
-      <NewsArchive searchParams={(await searchParams)} />
+      <NewsArchive 
+      // searchParams={(await searchParams)} 
+      searchParams={{ search: "", take: "10" }}
+      />
       <Spacer count={6} />
     </main>
   );

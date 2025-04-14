@@ -10,7 +10,7 @@ const Banner = () => {
       <div className="header-text col-start-1 row-start-1 w-full">
         <h3 className="text-[#d8d8d8]">CUỘC THI ROBOTICS</h3>
         <h1 className="gradient-text text-5xl md:text-6xl font-medium">ROBOCUS 2025</h1>
-        <h2 className="text-4xl md:text-6xl font-medium mt-4 md:mt-6">Sáng tạo và năng động</h2>
+        <h2 className="text-4xl w-max md:text-6xl font-medium mt-4 md:mt-6">Sáng tạo và năng động</h2>
         <p className="max-w-[750px] text-[#d8d8d8] font-light mt-3">
           Cuộc thi ROBOCUS 2025 do Câu lạc bộ Robotics - IoT, Trường ĐH KHTN,
           ĐHQGHCM phối hợp với Trung tâm đào tạo quốc tế ITEC chính thức được
@@ -31,7 +31,7 @@ const Banner = () => {
             ref={video}
             controls={false}
             preload="metadata"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-50"
           >
             <source src={"https://pub-56dff0b35bda462099f1145617bde151.r2.dev/robocus24%20(1).mp4#t=.1"} type="video/mp4" />
             Your browser does not support the video tag.
@@ -61,7 +61,7 @@ const Banner = () => {
             </p>
           </div>
           
-          <div className="intro-card bg-[#151721] w-[22rem] p-4">
+          <div className="intro-card bg-[#151721] max-w-[22rem] p-4">
             <h2 className="gradient-text text-6xl font-medium">3 năm</h2>
             <h3 className="font-medium mt-4">
               Hành trình hình thành và phát triển

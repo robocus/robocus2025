@@ -1,0 +1,69 @@
+name: Build and Deploy Static Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: './frontend/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: ./frontend
+        run: npm ci
+
+      - name: Build static pages
+        working-directory: ./frontend
+        run: npm run build
+
+      - name: Checkout target repository
+        uses: actions/checkout@v3
+        with:
+          repository: robocus/robocus.github.io
+          path: robocus.github.io
+          token: ${{ secrets.PAT_TOKEN }}
+          ssh-strict: true
+          persist-credentials: true
+          clean: true
+          sparse-checkout-cone-mode: true
+          fetch-depth: 1
+          fetch-tags: false
+          lfs: false
+          submodules: false
+          set-safe-directory: true
+
+      - name: Copy built files and create PR
+        run: |
+          cp -r frontend/out/* robocus.github.io/docs/
+          # Create CNAME file
+          echo "robocus.org" > robocus.github.io/docs/CNAME
+          # Create empty .nojekyll file
+          touch robocus.github.io/docs/.nojekyll
+          cd robocus.github.io
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git checkout -b update-docs-$(date +%Y%m%d-%H%M%S)
+          git add .
+          git commit -m "Update documentation from robocus2025"
+          git push origin HEAD
+
+      - name: Create Pull Request
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: ''
+          destination_repository: "robocus/robocus.github.io"
+          destination_branch: "main"
+          pr_title: "Update documentation from robocus2025"
+          pr_body: "Automated PR to update documentation"
+          github_token: ${{ secrets.PAT_TOKEN }}

@@ -10,7 +10,7 @@ const Banner = () => {
       <div className="header-text col-start-1 row-start-1 w-full">
         <h3 className="text-[#d8d8d8]">CUỘC THI ROBOTICS</h3>
         <h1 className="gradient-text text-5xl md:text-6xl font-medium">ROBOCUS 2025</h1>
-        <h2 className="text-4xl w-max md:text-6xl font-medium mt-4 md:mt-6">Sáng tạo và năng động</h2>
+        <h2 className="text-4xl w-full md:text-6xl font-medium mt-4 md:mt-6">Sáng tạo và năng động</h2>
         <p className="max-w-[750px] text-[#d8d8d8] font-light mt-3">
           Cuộc thi ROBOCUS 2025 do Câu lạc bộ Robotics - IoT, Trường ĐH KHTN,
           ĐHQGHCM phối hợp với Trung tâm đào tạo quốc tế ITEC chính thức được
@@ -19,7 +19,10 @@ const Banner = () => {
 
         <button
           type="button"
-          className="call-to-action w-max bg-indigo-400 text-sm font-medium py-4 px-6 rounded-full m-4 lg:mt-44 cursor-pointer"
+          onClick={() => {
+            window.location.href = "#overview";
+          }}
+          className="call-to-action w-max bg-indigo-400 text-sm font-medium py-4 px-6 rounded-full m-4 lg:mt-44 cursor-pointer z-200"
         >
           TÌM HIỂU THÊM
         </button>

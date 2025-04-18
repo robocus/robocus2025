@@ -14,17 +14,17 @@ const Overview = () => {
         <OverviewCard
           name="BẢNG A"
           link="/challenges/A"
-          desc="Dành cho lứa tuổi nhỏ hơn, bảng A khuyến khích sự sáng tạo thông qua việc lắp ráp và lập trình bằng LEGO WEDO 2.0. Các đội thi sẽ sử dụng máy tính bảng, laptop và trình bày ý tưởng trước ban giám khảo."
+          desc="Thông tin về thể lệ thi đấu và giải thưởng của bảng A"
         />
         <OverviewCard
           name="BẢNG B"
           link="/challenges/B"
-          desc="Hướng đến các bạn học sinh lớn hơn, bảng B tập trung vào việc giải quyết các vấn đề thực tiễn bằng việc lắp ráp và lập trình robot sử dụng LEGO SPIKE PRIME hoặc LEGO MINDSTORMS EV3. Các đội sẽ tìm hiểu các chủ đề, xây dựng giải pháp và trình bày trước hội đồng"
+          desc="Thông tin về thể lệ thi đấu và giải thưởng của bảng B"
         />
         <OverviewCard
           name="BẢNG C"
           link="/challenges/C"
-          desc="Bảng thi mang tính kỹ thuật cao nhất với việc học sinh tự thiết kế, lập trình và điều khiển robot để hoàn thành các nhiệm vụ trên sa bàn. Khuyến khích tư duy logic, kỹ năng teamwork và khả năng giải quyết tình huống."
+          desc="Thông tin về thể lệ thi đấu và giải thưởng của bảng C"
         />
       </div>
     </div>

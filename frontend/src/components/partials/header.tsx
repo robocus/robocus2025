@@ -16,8 +16,8 @@ const Header = () => {
   ];
 
   return (
-    <header>
-      <div className="max-w-[75rem] m-auto flex justify-between items-center my-3 px-4">
+    <header className=" bg-black">
+      <div className="max-w-[75rem] m-auto flex justify-between items-center mt-3 px-4">
         <Link href={"/"}>
           <div className="logo flex items-center gap-2">
             <img
@@ -38,7 +38,7 @@ const Header = () => {
         <nav
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } md:flex md:items-center md:gap-8 absolute md:static top-20 left-0 w-full md:w-auto bg-gray-800/75 md:bg-transparent p-4 md:p-0 z-30 backdrop-blur-2xl rounded-lg`}
+          } md:flex md:items-center md:gap-8 absolute md:static top-20 left-0 w-full md:w-auto bg-black/75 md:bg-transparent md:p-0 z-30 backdrop-blur-2xl rounded-lg`}
         >
           <ul className="flex flex-col md:flex-row gap-4 md:gap-8">
             {navs.map((nav, index) => (

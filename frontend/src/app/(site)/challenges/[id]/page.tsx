@@ -10,11 +10,11 @@ export async function generateStaticParams() {
   }));
 }
 
-const Challenge = ({ params }: { params: Promise<{ id: string }> }) => {
+const Challenge = async ({ params }: { params: Promise<{ id: string }> }) => {
   return (
     <div className="container mx-auto px-4 xl:px-24">
       <h1 className="gradient-text text-5xl md:text-6xl font-medium">
-        BẢNG A - WEDO 2.0
+        BẢNG {(await params).id}
       </h1>
 
       <h1 className="text-center text-5xl mt-8">ĐANG CẬP NHẬT</h1>

@@ -35,7 +35,7 @@ export default function HomePage() {
   ];
   
   return (
-    <div className="container mx-auto px-4 xl:px-24">
+    <div className="container mx-auto px-4 xl:px-24 ">
       <Spacer count={1} />
       <Banner />
       <Spacer count={4} />

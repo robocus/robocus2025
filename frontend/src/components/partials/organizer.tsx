@@ -66,11 +66,11 @@ const OrganizerCard = ({
   return (
     <>
       <div className="w-[30rem]">
-        <div className="logo w-max h-16 grayscale-25">
+        <div className="logo w-full h-16 grayscale-25 flex flex-row items-start">
           <img
             src={logo}
             alt=""
-            className="w-full h-full object-contain"
+            className="h-full object-contain"
           />
         </div>
         <h4 className="text-2xl font-medium mt-4">{name}</h4>

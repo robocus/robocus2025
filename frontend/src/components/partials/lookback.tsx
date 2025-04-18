@@ -33,7 +33,7 @@ const Lookback = ({
   const overTheYears = [
     {
       year: "Robocus 2023",
-      desc: "Robocus 2023 đánh dấu mùa đầu tiên đầy cảm xúc với sự tham gia của hơn 100 học sinh đến từ các trường THCS và THPT trên địa bàn TP.HCM. Cuộc thi không chỉ khơi gợi niềm yêu thích công nghệ mà còn là sân chơi gắn kết các bạn trẻ cùng sáng tạo và thi đấu với những robot do chính tay mình lập trình.",
+      desc: "Điểm khởi đầu, không chỉ là một cuộc thi, mà là cánh cửa mở ra sân chơi sáng tạo cho những bạn trẻ mang trong mình đam mê với robot.  Hành trình ấy đã thắp lên ngọn lửa khám phá, khơi gợi tư duy công nghệ và hun đúc tinh thần chinh phục thử thách của thế hệ trẻ.",
     },
     {
       year: "Robocus 2024",
@@ -49,8 +49,8 @@ const Lookback = ({
       <div className="grid gap-4 lg:grid-cols-5">
         
         <div className="left-text lg:col-span-2">
-          <h1 className="gradient-text w-full text-5xl font-medium max-w-[38rem] text-balance">
-            CÙNG NHÌN LẠI HÀNH TRÌNH PHÁT TRIỂN ROBOCUS
+          <h1 className="gradient-text w-full text-[2.5rem] font-medium max-w-[38rem] ">
+            HÌNH THÀNH VÀ PHÁT TRIỂN ROBOCUS
           </h1>
 
           {overTheYears.map((item, index) => (

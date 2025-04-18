@@ -3,14 +3,14 @@ import { Codesandbox, Cpu } from "lucide-react";
 const Intro = () => {
   const data = [
     {
-      topic: "Robotics",
+      topic: "Năng động",
       content:
-        "Cuộc thi thử thách khả năng thiết kế và lắp ráp robot thông minh. Thí sinh sẽ vận dụng kiến thức về cơ khí, điện tử và IoT để tạo ra các mô hình robot hoàn chỉnh, có khả năng tự hành và thực hiện nhiệm vụ trong môi trường mô phỏng thực tế.",
+        "Môi trường năng động thể hiện bản lĩnh, rèn luyện kỹ năng và chủ động chinh phục mục tiêu",
     },
     {
-      topic: "Programming",
+      topic: "Sáng tạo",
       content:
-        "Lập trình là chìa khóa điều khiển robot và xử lý dữ liệu cảm biến. Các đội thi sẽ viết phần mềm điều hướng, xử lý ảnh, và giao tiếp với phần cứng, sử dụng các ngôn ngữ lập trình như Arduino hoặc các nền tảng lập trình nhúng phổ biến.",
+        "Không ngừng đổi mới qua từng năm, cuộc thi mang đến sân chơi tri thức đầy thú vị, bất ngờ và bứt phá dành cho các bạn có niềm đam mê với ROBOT",
     },
   ];
 
@@ -21,8 +21,7 @@ const Intro = () => {
       </h3>
       <h1 className="gradient-text text-5xl md:text-6xl font-medium">ROBOCUS 2025</h1>
       <p className="max-w-[46rem] text-[#d8d8d8] font-light mt-3">
-        Cuộc thi Robocus được CLB Robotics - IoT, Trường ĐH KHTN, ĐHQGHCM tổ
-        chức và thực hiện với sự đồng hành của Trung tâm Đào tạo Quốc tế ITEC
+      Cuộc thi Robot được CLB Robotics - IoT, Trường ĐH KHTN, ĐHQGHCM tổ chức và thực hiện với sự đồng hành của Trung tâm Đào tạo Quốc tế ITEC
       </p>
 
       <div className="mt-8 flex flex-wrap lg:flex-nowrap gap-3">

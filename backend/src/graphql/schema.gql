@@ -32,7 +32,6 @@ type Competition {
 type User {
   id: String!
   username: String!
-  password: String!
 }
 
 type AuthLoginResponse {
@@ -41,7 +40,7 @@ type AuthLoginResponse {
 
 type Query {
   user(id: String!): User!
-  users: [User!]!
+  users(skip: Float, take: Float): [User!]!
   competition(id: String!): Competition!
   competitions: [Competition!]!
   news(id: String!): News!
@@ -51,8 +50,8 @@ type Query {
 type Mutation {
   login(data: AuthLoginInput!): AuthLoginResponse!
   createUser(data: UserCreateInput!): User!
-  updateUser(data: UserUpdateInput!): Boolean!
-  deleteUser(id: String!): Boolean!
+  updateUser(id: String!, data: UserUpdateInput!): User!
+  deleteUser(id: String!): User!
   createCompetition(data: CompetitionCreateInput!): Competition!
   updateCompetition(data: CompetitionUpdateInput!): Boolean!
   deleteCompetition(id: String!): Boolean!
@@ -72,8 +71,6 @@ input UserCreateInput {
 }
 
 input UserUpdateInput {
-  id: String!
-  username: String
   password: String
 }
 

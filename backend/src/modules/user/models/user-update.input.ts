@@ -1,15 +1,9 @@
 import { Field, InputType } from '@nestjs/graphql';
-import { PrimaryGeneratedColumn } from 'typeorm';
+import { MinLength } from 'class-validator';
 
 @InputType()
 export class UserUpdateInput {
-  @PrimaryGeneratedColumn('uuid')
-  @Field()
-  id: string;
-
   @Field({ nullable: true })
-  username: string;
-
-  @Field({ nullable: true })
+  @MinLength(8, { message: 'Password must be at least 8 characters long' })
   password: string;
 }

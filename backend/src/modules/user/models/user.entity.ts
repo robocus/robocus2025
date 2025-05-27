@@ -1,5 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm';
-import { Field, ObjectType } from '@nestjs/graphql';
+import { Field, HideField, ObjectType } from '@nestjs/graphql';
 
 @Entity('users')
 @Unique(['username'])
@@ -14,6 +14,6 @@ export class User {
   username: string;
 
   @Column()
-  @Field()
+  @HideField()
   password: string;
 }

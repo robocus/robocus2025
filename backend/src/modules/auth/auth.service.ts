@@ -14,7 +14,7 @@ export class AuthService {
   ) {}
 
   async login(data: AuthLoginInput): Promise<AuthLoginResponse> {
-    const user = await this.userService.findOneByUsername(data.username);
+    const user = await this.userService.findOne({ username: data.username });
     const isMatched = user && (await compare(data.password, user.password));
     if (!isMatched) {
       throw new UnauthorizedException();
@@ -25,7 +25,7 @@ export class AuthService {
   }
 
   async validate(payload: JwtPayload): Promise<boolean> {
-    const user = this.userService.findOneById(payload.id);
+    const user = this.userService.findOne({ id: payload.id });
     return !!user;
   }
 }

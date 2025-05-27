@@ -12,6 +12,7 @@ import { Competition } from './modules/competition/models/competition.entity';
 import { News } from './modules/news/models/news.entity';
 import { NewsModule } from './modules/news/news.module';
 import { Image } from './modules/image/models/image.entity';
+import { GraphQLError, GraphQLFormattedError } from 'graphql';
 
 @Module({
   imports: [
@@ -19,7 +20,12 @@ import { Image } from './modules/image/models/image.entity';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/graphql/schema.gql'),
-      playground: true,
+      formatError: (error: GraphQLError) => {
+        const graphQLFormattedError: GraphQLFormattedError = {
+          message: error.message,
+        };
+        return graphQLFormattedError;
+      },
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',

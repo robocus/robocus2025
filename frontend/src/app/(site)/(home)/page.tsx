@@ -40,14 +40,14 @@ export default function HomePage() {
       <Banner />
       <Spacer count={4} />
       <Intro />
+      <Spacer count={2} />
+      <Timeline />
       <Spacer count={4} />
       <Organizer />
       <Spacer count={4} />
       <Stats />
       <Spacer count={4} />
       <Overview />
-      <Spacer count={2} />
-      <Timeline />
       <Lookback images={pastEventImages}/>
       <Spacer count={4} />
       <Awards />

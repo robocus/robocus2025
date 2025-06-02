@@ -14,17 +14,17 @@ const Overview = () => {
         <OverviewCard
           name="BẢNG A"
           link="/challenges/A"
-          desc="Thông tin về thể lệ thi đấu và giải thưởng của bảng A"
+          desc="Thông tin về thể lệ thi đấu của bảng A"
         />
         <OverviewCard
           name="BẢNG B"
           link="/challenges/B"
-          desc="Thông tin về thể lệ thi đấu và giải thưởng của bảng B"
+          desc="Thông tin về thể lệ thi đấu của bảng B"
         />
         <OverviewCard
           name="BẢNG C"
           link="/challenges/C"
-          desc="Thông tin về thể lệ thi đấu và giải thưởng của bảng C"
+          desc="Thông tin về thể lệ thi đấu của bảng C"
         />
       </div>
     </div>

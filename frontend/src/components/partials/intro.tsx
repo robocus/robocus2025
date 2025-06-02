@@ -16,7 +16,7 @@ const Intro = () => {
 
   return (
     <div className="m-auto">
-      <h3 className="text-[#d8d8d8]" id="#intro">
+      <h3 className="text-[#d8d8d8]" id="intro">
         GIỚI THIỆU
       </h3>
       <h1 className="gradient-text text-5xl md:text-6xl font-medium">ROBOCUS 2025</h1>

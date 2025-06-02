@@ -12,24 +12,24 @@ const Footer = () => {
     {
       name: "Thể lệ",
       items: [
-        { name: "Nội dung - Bảng A", href: "" },
-        { name: "Nội dung - Bảng B", href: "" },
-        { name: "Nội dung - Bảng C", href: "" },
+        { name: "Nội dung - Bảng A", href: "/challenges/A" },
+        { name: "Nội dung - Bảng B", href: "/challenges/B" },
+        { name: "Nội dung - Bảng C", href: "/challenges/C" },
       ],
     },
     {
       name: "Hành trình",
       items: [
-        { name: "Robocus 2023", href: "" },
-        { name: "Robocus 2024", href: "" },
+        // { name: "Robocus 2023", href: "" },
+        { name: "Robocus 2024", href: "https://robocus.org/robocus2024/" },
       ],
     },
     {
       name: "Liên hệ",
       items: [
         { name: "Địa chỉ: 227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM", href: "https://maps.app.goo.gl/VAWCdYoRM6pz15JX9" },
-        { name: "Hotline / Zalo: 0366.399.748", href: "" },
-        { name: "Email: robotics@hcmus.edu.vn", href: "" },
+        { name: "Hotline / Zalo: 0366.399.748", href: "tel:+84366399748" },
+        { name: "Email: robotics@hcmus.edu.vn", href: "mailto:robotics@hcmus.edu.vn" },
         { name: "Fanpage: facebook.com/RoboticsHCMUS", href: "https://www.facebook.com/RoboticsHCMUS" },
       ],
     }
@@ -38,7 +38,7 @@ const Footer = () => {
     <div className="p-10" id="contact">
       <div className="flex items-center gap-1">
         <img
-          src="https://github.com/robocus/robocus.github.io/blob/main/docs/images/logo/logo.png?raw=true"
+          src="/02-robocus-2025-logo-white.png"
           className="h-[4rem]"
           alt="logo"
         />

@@ -1,4 +1,4 @@
-import { Codesandbox, Cpu } from "lucide-react";
+import { Cpu } from "lucide-react";
 
 const Intro = () => {
   const data = [

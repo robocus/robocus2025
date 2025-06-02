@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useRef } from "react";
 import Spacer from "./spacer";
@@ -29,6 +29,29 @@ const Timeline = ({
   images?: string[];
   className?: string;
 }) => {
+  const timelines = [
+    {
+      date: "02/06",
+      title: "Khởi động",
+    },
+    {
+      date: "03/06 - 15/06",
+      title: "Mở cổng đăng ký",
+    },
+    {
+      date: "16/06 - 20/07",
+      title: "Tiến hành ôn luyện",
+    },
+    {
+      date: "21/07 - 27/07",
+      title: "Ôn luyện tăng cường",
+    },
+    {
+      date: "03/08",
+      title: "Thi đấu",
+    },
+  ];
+
   const gridRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     container: gridRef, // remove this if your container is not fixed height
@@ -47,8 +70,21 @@ const Timeline = ({
 
   return (
     <div className="">
-      <h1 className="gradient-text text-3xl font-medium">TIMELINE CUỘC THI</h1>
-      <h2 className="text-xl mt-4">Thời gian thi đấu sẽ sớm được công bố. Vui lòng đợi.</h2> 
+      <h1 className="text-3xl font-medium mb-1">TIMELINE CUỘC THI</h1>
+      <div className="max-w-[60rem] w-full mx-auto">
+        {timelines.map((item, index) => (
+          <div
+            key={index}
+            className={cn(
+              "flex items-center justify-between text-lg font-medium p-2 rounded hover:bg-[#a6efff] hover:text-gray-900 transition-colors duration-300",
+              index % 2 === 0 ? "text-[#a6efff]" : "text-[#d8d8d8]"
+            )}
+          >
+            <span>{item.date}</span>
+            <span>{item.title}</span>
+          </div>
+        ))}
+      </div>
       <Spacer count={4} />
     </div>
   );

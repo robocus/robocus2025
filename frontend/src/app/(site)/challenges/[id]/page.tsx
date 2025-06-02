@@ -35,7 +35,7 @@ const TheLeA = () => {
   return (
     <>
       <img
-        src="/20250529-poster-khoi-dong-robocus-2025-16-9.png"
+        src="/20250529-poster-khoi-dong-robocus-2025-16-9-large.png"
         alt=""
         className="h-[20rem] w-full object-cover object-center sm:object-[50%_40%]"
       />
@@ -73,7 +73,7 @@ const TheLeB = () => {
   return (
     <>
       <img
-        src="/20250529-poster-khoi-dong-robocus-2025-16-9.png"
+        src="/20250529-poster-khoi-dong-robocus-2025-16-9-large.png"
         alt=""
         className="h-[20rem] w-full object-cover object-center sm:object-[50%_40%]"
       />
@@ -109,7 +109,7 @@ const TheLeC = () => {
   return (
     <>
       <img
-        src="/20250529-poster-khoi-dong-robocus-2025-16-9.png"
+        src="/20250529-poster-khoi-dong-robocus-2025-16-9-large.png"
         alt=""
         className="h-[20rem] w-full object-cover object-center sm:object-[50%_40%]"
       />

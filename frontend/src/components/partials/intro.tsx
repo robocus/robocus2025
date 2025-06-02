@@ -26,7 +26,7 @@ const Intro = () => {
 
       <div className="mt-8 flex flex-wrap lg:flex-nowrap gap-3">
         <div className="h-[24rem] w-[120rem] bg-gray-900">
-          <img src="20250529-poster-khoi-dong-robocus-2025-16-9.png" alt="" className="w-full h-full object-cover"/>
+          <img src="/20250529-poster-khoi-dong-robocus-2025-16-9-large.png" alt="" className="w-full h-full object-cover"/>
         </div>
 
         <div className="flex flex-col flex-wrap gap-8">

@@ -3,14 +3,14 @@ import { Cpu } from "lucide-react";
 const Intro = () => {
   const data = [
     {
-      topic: "Năng động",
+      topic: "STEAM",
       content:
-        "Môi trường năng động thể hiện bản lĩnh, rèn luyện kỹ năng và chủ động chinh phục mục tiêu",
+        "Giúp các em tiếp cận kiến thức Khoa học, Công nghệ, Kỹ thuật, Nghệ thuật và Toán học qua trải nghiệm thực hành, lắp ráp và lập trình robot.",
     },
     {
-      topic: "Sáng tạo",
+      topic: "SÁNG TẠO",
       content:
-        "Không ngừng đổi mới qua từng năm, cuộc thi mang đến sân chơi tri thức đầy thú vị, bất ngờ và bứt phá dành cho các bạn có niềm đam mê với ROBOT",
+        "Không ngừng đổi mới qua từng năm, cuộc thi mang đến sân chơi tri thức đầy thú vị, bất ngờ và bứt phá dành cho các bạn có niềm đam mê công nghệ và sáng tạo robot",
     },
   ];
 
@@ -39,7 +39,7 @@ const Intro = () => {
               />
               <div className="h-auto">
                 <h3 className="text-3xl">{item.topic}</h3>
-                <p className="font-light mt-6">{item.content}</p>
+                <p className="font-light mt-3">{item.content}</p>
               </div>
             </div>
           ))}

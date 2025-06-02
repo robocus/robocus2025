@@ -38,17 +38,24 @@ export default function HomePage() {
     <div className="container mx-auto px-4 xl:px-24 ">
       <Spacer count={1} />
       <Banner />
+      
       <Spacer count={4} />
       <Intro />
-      <Spacer count={2} />
-      <Timeline />
-      <Spacer count={4} />
-      <Organizer />
-      <Spacer count={4} />
-      <Stats />
+      
       <Spacer count={4} />
       <Overview />
+      
+      <Spacer count={2} />
+      <Timeline />
+      
       <Lookback images={pastEventImages}/>
+      
+      <Spacer count={4} />
+      <Organizer />
+      
+      <Spacer count={4} />
+      <Stats />
+      
       <Spacer count={4} />
       <Awards />
     </div>

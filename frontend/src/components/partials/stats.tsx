@@ -4,7 +4,7 @@ const Stats = () => {
       <StatBlock number={3} content="Năm hình thành và phát triển" />
       <StatBlock number={20} over content="Đội thi đấu" />
       <StatBlock number={100} over content="Thí sinh tham gia" />
-      <StatBlock number={6} content="Hạng mục thi đấu" />
+      <StatBlock number={4} content="Hạng mục thi đấu" />
     </div>
   );
 };

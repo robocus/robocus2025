@@ -2,13 +2,13 @@ import { img } from "motion/react-client";
 
 export const Organizer = () => {
   const organizers = [
+    // {
+    //   imgUrl: "https://pub-56dff0b35bda462099f1145617bde151.r2.dev/image.png",
+    //   name: "Trường ĐH KHTN, ĐHQG - HCM",
+    //   desc: "Là đơn vị chủ quản, Trường Đại học Khoa học Tự nhiên đóng vai trò then chốt trong việc tổ chức, cung cấp cơ sở vật chất, chuyên môn và tạo điều kiện cho sinh viên phát triển trong lĩnh vực Khoa học và Công nghệ.",
+    // },
     {
-      imgUrl: "https://pub-56dff0b35bda462099f1145617bde151.r2.dev/image.png",
-      name: "Trường ĐH KHTN, ĐHQG - HCM",
-      desc: "Là đơn vị chủ quản, Trường Đại học Khoa học Tự nhiên đóng vai trò then chốt trong việc tổ chức, cung cấp cơ sở vật chất, chuyên môn và tạo điều kiện cho sinh viên phát triển trong lĩnh vực Khoa học và Công nghệ.",
-    },
-    {
-      imgUrl: "https://pub-56dff0b35bda462099f1145617bde151.r2.dev/image%20copy.png",
+      imgUrl: "https://pub-56dff0b35bda462099f1145617bde151.r2.dev/robotics-iot-club-hcmus--white-logo-new-from-T8-2024-1080x340-01.png",
       name: "CLB Robotics - IoT",
       desc: "Là lực lượng nòng cốt đứng sau cuộc thi Robocus, CLB Robotics - IoT tập hợp những sinh viên đam mê công nghệ, sáng tạo và nghiên cứu trong các lĩnh vực robot, lập trình, và Internet vạn vật.",
     },
@@ -44,13 +44,13 @@ export const Organizer = () => {
           />
         ))}
       </div>
-      <br />
+      {/* <br />
       <h1 className="gradient-text text-3xl font- mt-4">ĐƠN VỊ TÀI TRỢ</h1>
       <div className="grid grid-cols-3 md:grid-cols-4 gap-0 mt-8">
         {sponsors.map((sponsor, index) => (
           <SponsorCard key={index} logoUrl={sponsor.logoUrl} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -74,7 +74,7 @@ const OrganizerCard = ({
           />
         </div>
         <h4 className="text-2xl font-medium mt-4">{name}</h4>
-        <p className="w-auto font-light mt-4">{desc}</p>
+        <p className="w-auto font-light mt-4 text-justify">{desc}</p>
       </div>
     </>
   );

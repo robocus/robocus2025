@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -21,7 +21,7 @@ const Header = () => {
         <Link href={"/"}>
           <div className="logo flex items-center gap-2">
             <img
-              src="https://github.com/robocus/robocus.github.io/blob/main/docs/images/logo/logo.png?raw=true"
+              src="/02-robocus-2025-logo-white.png"
               className="h-[4rem]"
               alt="logo"
             />

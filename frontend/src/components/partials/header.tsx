@@ -16,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <header className=" bg-black">
+    <header className="">
       <div className="max-w-[75rem] m-auto flex justify-between items-center mt-3 px-4">
         <Link href={"/"}>
           <div className="logo flex items-center gap-2">

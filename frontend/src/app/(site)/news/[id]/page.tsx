@@ -3,15 +3,34 @@ import PageWall from "@/components/partials/pageWall";
 import Spacer from "@/components/partials/spacer";
 import { notFound } from "next/navigation";
 
-export async function generateStaticParams() {
-  // Here, you would fetch the available IDs from an API or database
-  // Example: Simulating fetching data for multiple articles
-  const allNewsIds = ["1", "2", "3"]; // This should be fetched dynamically from your data source
+// export async function generateStaticParams() {
+//   // Here, you would fetch the available IDs from an API or database
+//   // Example: Simulating fetching data for multiple articles
+//   const backend = process.env.BACKEND_BASE ?? "http://localhost:8000";
+//   const response = await fetch(new URL("/graphql", backend), {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({
+//       query: `query {
+//             newsfeed {
+//               id
+//             }
+//           }
+//       `,
+//     }),
+//   });
+//   // console.log("Response:", await response.json());
+//   const json = await response.json();
+//   const allNewsIds = json.data.newsfeed as string[];
+//   console.log("All News IDs:", allNewsIds);
+//   // const allNewsIds = ["1", "2", "3"]; // This should be fetched dynamically from your data source
 
-  return allNewsIds.map((id) => ({
-    id: id, // This should match the dynamic segment of your file (e.g., [id].js)
-  }));
-}
+//   return allNewsIds.map((id) => ({
+//     id: id, // This should match the dynamic segment of your file (e.g., [id].js)
+//   }));
+// }
 
 const NewsArticlePage = async ({
   params,
@@ -20,7 +39,27 @@ const NewsArticlePage = async ({
   params: Promise<{ id: string }>;
   // searchParams: Promise<{ search: string }>;
 }) => {
-  const news = newsMockData; // Fetch data with params
+  console.log("Params:", (await params).id);
+  const backend = process.env.BACKEND_BASE ?? "http://localhost:8000";
+  const response = await fetch(new URL("/graphql", backend), {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `query {
+            news(id: "${(await params).id}") {
+              id, title, description, content, date
+            }
+          }
+      `,
+    }),
+  });
+  // console.log("Response:", await response.json());
+  const json = await response.json();
+  console.log("News Article Data:", json);
+
+  const news = json.data.news; // Fetch data with params
 
   if (!news) notFound();
 

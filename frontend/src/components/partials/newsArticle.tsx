@@ -1,20 +1,47 @@
 import Link from "next/link";
 
-const NewsArticle = ({ news, search }: { news: News; search: string }) => {
-  const otherNews: News[] = [news, news, news, news, news, news]; // Fetch data with search
+const NewsArticle = async ({
+  news,
+  search,
+}: {
+  news: News;
+  search: string;
+}) => {
+  const backend = process.env.BACKEND_BASE ?? "http://localhost:8000";
+
+  const response = await fetch(new URL("/graphql", backend), {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `query {
+            newsfeed(take: 6) {
+              id, title, description, content, date
+            }
+          }
+      `,
+    }),
+  });
+  // console.log("Response:", await response.json());
+  const json = await response.json();
+  console.log("News Article Data:", json);
+  console.log("Current:", news);
+  const otherNews = json.data.newsfeed as News[];
+  // const otherNews: News[] = [news, news, news, news, news, news]; // Fetch data with search
 
   return (
     <section>
       <div className="container mx-auto px-4 xl:px-24 grid grid-cols-1 lg:grid-cols-3 gap-y-8 lg:gap-x-12">
         <div className="col-span-2">
           <p className="text-gray-500 text-md">
-            {news.date.toLocaleDateString()}
+            {new Date(news.date).toLocaleDateString()}
           </p>
           <div className="mb-8 text-4xl font-medium">{news.title}</div>
           <p className="font-light">{news.description}</p>
           <div
             className="font-light"
-            dangerouslySetInnerHTML={{ __html: news.content }}
+            // dangerouslySetInnerHTML={{ __html: news.content }}
           />
         </div>
         <div className="overflow-hidden p-2">
@@ -39,7 +66,7 @@ const NewsArticle = ({ news, search }: { news: News; search: string }) => {
                     {news.title}
                   </p>
                   <p className="text-gray-600 text-sm text-right">
-                    {news.date.toLocaleDateString()}
+                    {new Date(news.date).toLocaleDateString()}
                   </p>
                 </div>
               </Link>
@@ -57,8 +84,7 @@ const NewsArticle = ({ news, search }: { news: News; search: string }) => {
 
 export default NewsArticle;
 
-// Mock type
-type News = {
+export type News = {
   id: string;
   title: string;
   description: string;

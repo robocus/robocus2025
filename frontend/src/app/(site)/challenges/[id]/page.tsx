@@ -43,15 +43,18 @@ const TheLeA = () => {
       <br />
       <h2 className="gradient-text text-2xl">Tổng quan:</h2>
       <p className="text-justify">
-        Chủ đề: "Life Beyond Earth" – Cuộc sống bên ngoài Trái Đất, đây không
-        còn chỉ là ý tưởng trong các bộ phim khoa học viễn tưởng, mà đang dần
-        trở thành một câu hỏi nghiêm túc của thời đại: Liệu con người có thể
+        Chủ đề: "Life Beyond Earth" – <i>Cuộc sống bên ngoài Trái Đất</i>, đây
+        không còn chỉ là ý tưởng trong các bộ phim khoa học viễn tưởng, mà đang
+        dần trở thành một câu hỏi nghiêm túc của thời đại: Liệu con người có thể
         sinh sống và phát triển trên các hành tinh khác? Trong tương lai, khi
         Trái Đất đối mặt với nhiều thách thức như biến đổi khí hậu, cạn kiệt tài
         nguyên, việc tìm kiếm một “ngôi nhà thứ hai” cho nhân loại là điều tất
-        yếu. Bảng thi đấu sử dụng bộ dụng cụ Lego Wedo 2.0, các thí sinh sẽ bước
-        vào hành trình sáng tạo đầy thử thách với 2 phần thi: Thuyết trình ý
-        tưởng và Thi đấu sa bàn.
+        yếu.
+      </p>
+      <p>
+        Bảng thi đấu sử dụng bộ dụng cụ Lego Wedo 2.0, các thí sinh sẽ bước vào
+        hành trình sáng tạo đầy thử thách với 2 phần thi: Thuyết trình ý tưởng
+        và Thi đấu sa bàn.
       </p>
 
       <br />
@@ -117,15 +120,18 @@ const TheLeC = () => {
       <br />
       <h2 className="gradient-text text-2xl">Tổng quan:</h2>
       <p className="text-justify">
-        Trong một thế giới ngày càng hiện đại, ROBOT hông chỉ nhận sự điều khiển
-        của con người mà còn cần khả năng phối hợp thông minh giữa điều khiển và
-        tự động để giải quyết những thử thách phức tạp. Bảng C là sân chơi nơi
-        các đội sẽ thiết kế và lập trình những chiếc xe điều khiển và tự hành
-        bằng vi mạch để cùng nhau thực hiện chuỗi nhiệm vụ phối hợp đa dạng. Các
-        ROBOT sẽ cần tương tác nhịp nhàng: một ROBOT đảm nhận việc tìm kiếm và
-        thu thập vật phẩm tại các điểm trên sân, trong khi ROBOT còn lại sẽ di
-        chuyển qua mê cung để vận chuyển vật phẩm đến đúng vị trí yêu cầu. Tốc
-        độ, độ chính xác và sự phối hợp chính là chìa khóa chiến thắng. Đây
+        Trong một thế giới ngày càng hiện đại, ROBOT không chỉ nhận sự điều
+        khiển của con người mà còn cần khả năng phối hợp thông minh giữa điều
+        khiển và tự động để giải quyết những thử thách phức tạp. Bảng C là sân
+        chơi nơi các đội sẽ thiết kế và lập trình những chiếc xe điều khiển và
+        tự hành bằng vi mạch để cùng nhau thực hiện chuỗi nhiệm vụ phối hợp đa
+        dạng.
+      </p>
+      <p>
+        Các ROBOT sẽ cần tương tác nhịp nhàng: một ROBOT đảm nhận việc tìm kiếm
+        và thu thập vật phẩm tại các điểm trên sân, trong khi ROBOT còn lại sẽ
+        di chuyển qua mê cung để vận chuyển vật phẩm đến đúng vị trí yêu cầu.
+        Tốc độ, độ chính xác và sự phối hợp chính là chìa khóa chiến thắng. Đây
         không chỉ là một thử thách kỹ thuật, mà còn là nơi thể hiện tư duy chiến
         thuật, khả năng phối hợp nhuần nhuyễn và sự sáng tạo không giới hạn của
         các bạn trẻ yêu công nghệ.

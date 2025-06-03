@@ -17,29 +17,31 @@ export class NewsResolver {
   }
 
   @Query(() => [News])
-  async newsfeed(): Promise<News[]> {
-    const newsfeed = await this.newsService.find();
-    return newsfeed;
+  async newsfeed(
+    @Args('skip', { nullable: true }) skip?: number,
+    @Args('take', { nullable: true }) take?: number,
+  ): Promise<News[]> {
+    return await this.newsService.find(skip, take);
   }
 
   @UseGuards(JwtGuard)
   @Mutation(() => News)
   async createNews(@Args('data') data: NewsCreateInput) {
-    const newNews = await this.newsService.create(data);
-    return newNews;
+    return await this.newsService.create(data);
   }
 
   @UseGuards(JwtGuard)
-  @Mutation(() => Boolean)
-  async updateNews(@Args('data') data: NewsUpdateInput) {
-    await this.newsService.update(data);
-    return true;
+  @Mutation(() => News)
+  async updateNews(
+    @Args('id') id: string,
+    @Args('data') data: NewsUpdateInput,
+  ): Promise<News | null> {
+    return await this.newsService.update(id, data);
   }
 
   @UseGuards(JwtGuard)
-  @Mutation(() => Boolean)
-  async deleteNews(@Args('id') id: string) {
-    await this.newsService.delete(id);
-    return true;
+  @Mutation(() => News)
+  async deleteNews(@Args('id') id: string): Promise<News | null> {
+    return await this.newsService.delete(id);
   }
 }

@@ -22,19 +22,22 @@ export class NewsService {
     return news;
   }
 
-  async find(): Promise<News[]> {
-    return this.newsRepository.find({ order: { date: 'DESC' } });
+  async find(skip?: number, take?: number): Promise<News[]> {
+    return this.newsRepository.find({ order: { date: 'DESC' }, skip, take });
   }
 
-  async create(newsCreateInput: NewsCreateInput) {
+  async create(newsCreateInput: NewsCreateInput): Promise<News> {
     const { imageCreateBase64s, ...rest } = newsCreateInput;
     const images = await this.imageService.create(imageCreateBase64s);
     const newNews = this.newsRepository.create({ images, ...rest });
-    return this.newsRepository.save(newNews);
+    return await this.newsRepository.save(newNews);
   }
 
-  async update(newsUpdateInput: NewsUpdateInput) {
-    const { id, imageCreateBase64s, imageDeleteIds, ...rest } = newsUpdateInput;
+  async update(
+    id: string,
+    newsUpdateInput: NewsUpdateInput,
+  ): Promise<News | null> {
+    const { imageCreateBase64s, imageDeleteIds, ...rest } = newsUpdateInput;
     const news = await this.findOneById(id);
     if (!news) throw new NotFoundException();
     if (imageCreateBase64s) {
@@ -43,12 +46,15 @@ export class NewsService {
     if (imageDeleteIds) {
       await this.imageService.delete(imageDeleteIds);
     }
-    return this.newsRepository.update({ id }, rest);
+    await this.newsRepository.update({ id }, rest);
+    return await this.findOneById(id);
   }
 
-  async delete(id: string) {
+  async delete(id: string): Promise<News | null> {
     const news = await this.findOneById(id);
     if (!news) throw new NotFoundException();
-    return this.newsRepository.remove(news);
+    const deletedNews = { ...news } as News;
+    await this.newsRepository.remove(news);
+    return deletedNews;
   }
 }

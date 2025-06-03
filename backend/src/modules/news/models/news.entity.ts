@@ -25,6 +25,10 @@ export class News {
 
   @Column()
   @Field()
+  description: string;
+
+  @Column()
+  @Field()
   content: string;
 
   @OneToMany(() => Image, (image) => image.news)

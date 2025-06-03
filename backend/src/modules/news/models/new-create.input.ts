@@ -6,6 +6,9 @@ export class NewsCreateInput {
   title: string;
 
   @Field()
+  description: string;
+
+  @Field()
   content: string;
 
   @Field(() => [String])

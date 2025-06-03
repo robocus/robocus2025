@@ -141,7 +141,7 @@ const TheLeC = () => {
       <h2 className="gradient-text text-2xl font-medium">Nội dung chi tiết:</h2>
       <br />
       <Link
-        href="https://drive.google.com/open?id=1KZunO8JEyDTTQhnD4H2i_oT9exzLQ-K1&usp=drive_copy"
+        href="https://drive.google.com/file/d/1_gfar2Y2kiNwra_fVLxKPA8uejIhimys/view?usp=sharing"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:underline"

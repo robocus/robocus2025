@@ -2,8 +2,8 @@ const Stats = () => {
   return (
     <div className="flex justify-center gap-6 flex-wrap">
       <StatBlock number={3} content="Năm hình thành và phát triển" />
-      <StatBlock number={20} over content="Đội thi đấu" />
-      <StatBlock number={100} over content="Thí sinh tham gia" />
+      <StatBlock number={50} over content="Đội thi đấu" />
+      <StatBlock number={150} over content="Thí sinh tham gia" />
       <StatBlock number={4} content="Hạng mục thi đấu" />
     </div>
   );

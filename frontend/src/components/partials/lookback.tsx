@@ -47,10 +47,9 @@ const Lookback = ({
         HÀNH TRÌNH ROBOCUS
       </h3>
       <div className="grid gap-4 lg:grid-cols-5">
-        
         <div className="left-text lg:col-span-2">
           <h1 className="gradient-text w-full text-[2.5rem] font-medium max-w-[38rem] ">
-            HÌNH THÀNH VÀ PHÁT TRIỂN ROBOCUS
+            ROBOCUS QUA CÁC MÙA
           </h1>
 
           {overTheYears.map((item, index) => (
@@ -68,7 +67,7 @@ const Lookback = ({
             </div>
           ))}
         </div>
-        
+
         <div className="right-img lg:col-span-3">
           <div
             // No scrollbar here
@@ -133,7 +132,6 @@ const Lookback = ({
             </div>
           </div>
         </div>
-        
       </div>
     </>
   );

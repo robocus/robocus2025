@@ -1,34 +1,22 @@
-version: '3.8'
-
 services:
-  # backend:
-  #   build:
-  #     context: ./backend
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "8000:8000"
-  #   environment:
-  #     - PORT=8000
-  #   volumes:
-  #     - ./backend:/app
-  #     - /app/node_modules
-  #   restart: unless-stopped
-
-  # cloudflared:
-  #   image: cloudflare/cloudflared:latest
-  #   container_name: cloudflared
-  #   command: tunnel --no-autoupdate run --token ${TUNNEL_TOKEN}
-  #   restart: unless-stopped
-
-  frontend:
+  backend:
+    container_name: backend
     build:
-      context: ./frontend
+      context: ./backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env.production
     ports:
-      - "3123:3000"
-    environment:
-      - PORT=3000
-    # volumes:
-    #   - ./frontend:/app
-    # depends_on:
-    #   - backend
-    # restart: unless-stopped
+      - 8000:8000
+
+  # frontend:
+  #   container_name: frontend
+  #   build:
+  #     context: ./frontend
+  #   ports:
+  #     - "3123:3000"
+  #   environment:
+  #     - PORT=3000
+  #   depends_on:
+  #     - backend
+  #   restart: unless-stopped

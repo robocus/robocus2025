@@ -96,7 +96,7 @@ const TheLeB = () => {
       <h2 className="gradient-text text-2xl font-medium">Nội dung chi tiết:</h2>
       <br />
       <Link
-        href="https://drive.google.com/open?id=1ScqDfjvAOOoKQuqmabZ9od6CiTjaVJwy&usp=drive_copy"
+        href="https://drive.google.com/file/d/1Gn0nCBNTd4lZ2N8y0JttfjIa_CLZlKmO/view?usp=sharing"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:underline"
@@ -141,7 +141,7 @@ const TheLeC = () => {
       <h2 className="gradient-text text-2xl font-medium">Nội dung chi tiết:</h2>
       <br />
       <Link
-        href="https://drive.google.com/file/d/1_gfar2Y2kiNwra_fVLxKPA8uejIhimys/view?usp=sharing"
+        href="https://drive.google.com/file/d/11Gx3mpxgg3PsreHjK2jhu2sMuqsXWFuW/view?usp=drive_link"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:underline"

@@ -61,7 +61,7 @@ const TheLeA = () => {
       <h2 className="gradient-text text-2xl font-medium">Nội dung chi tiết:</h2>
       <br />
       <Link
-        href="https://drive.google.com/file/d/18VJ5ji2PFrrl_o9hDj2r3W0ho6P2tTNu/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1TSzLrX0wB_l9FRFr6iDAFgHE7-VkDThZ/view?usp=sharing"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:underline"

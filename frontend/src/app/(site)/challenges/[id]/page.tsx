@@ -61,7 +61,7 @@ const TheLeA = () => {
       <h2 className="gradient-text text-2xl font-medium">Nội dung chi tiết:</h2>
       <br />
       <Link
-        href="https://drive.google.com/file/d/1TSzLrX0wB_l9FRFr6iDAFgHE7-VkDThZ/view?usp=sharing"
+        href="https://drive.google.com/file/d/1p1tTOHSLvSs_6TBsStREemMs2f0SJUc6/view?usp=drive_link"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:underline"
@@ -96,7 +96,7 @@ const TheLeB = () => {
       <h2 className="gradient-text text-2xl font-medium">Nội dung chi tiết:</h2>
       <br />
       <Link
-        href="https://drive.google.com/file/d/1Gn0nCBNTd4lZ2N8y0JttfjIa_CLZlKmO/view?usp=sharing"
+        href="https://drive.google.com/file/d/16iVB0vjtGIzshQXLBIstDAzZD8fRmSWM/view?usp=drive_link"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:underline"
@@ -141,7 +141,7 @@ const TheLeC = () => {
       <h2 className="gradient-text text-2xl font-medium">Nội dung chi tiết:</h2>
       <br />
       <Link
-        href="https://drive.google.com/file/d/11Gx3mpxgg3PsreHjK2jhu2sMuqsXWFuW/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1CHx7eB1CJ506RnR1GWVYUESEWOtiaSXK/view?usp=drive_link"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:underline"
